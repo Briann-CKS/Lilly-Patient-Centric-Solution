@@ -1,16 +1,18 @@
+
+// index.js
+
 function sendQuestion() {
-    var userInput = document.querySelector('.user-input');
-    var chatContainer = document.querySelector('.chat-container');
-
-    var userBubble = document.createElement('div');
-    userBubble.className = 'user-bubble';
-    userBubble.textContent = userInput.value;
+    // Get the user input from the input field
+    const userInput = document.getElementById("userInput").value;
+  
+    // Perform any necessary actions with the user's query
+    // For example, you can display it in the chat container as a user bubble
+    const chatContainer = document.querySelector(".chat-container");
+    const userBubble = document.createElement("div");
+    userBubble.classList.add("user-bubble");
+    userBubble.textContent = userInput;
     chatContainer.appendChild(userBubble);
-
-    userInput.value = '';
-
-    var botBubble = document.createElement('div');
-    botBubble.className = 'bot-bubble';
-    botBubble.textContent = 'Sorry, I am just a demo chatbot. I cannot answer questions.';
-    chatContainer.appendChild(botBubble);
-}
+  
+    // Clear the input field after sending the question
+    document.getElementById("userInput").value = "";
+  }
