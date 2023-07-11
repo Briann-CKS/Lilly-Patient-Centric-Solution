@@ -13,7 +13,7 @@ Victoria Huang, Nicholas Okoro
 3. Front End Developer  
 Gabriel Iskandar
 
-4. Back End Developer
+4. Back End Developer  
 Darrell Hayes, Brian Cheong, Gabriel Iskandar
 
 5. Data Engineer  
