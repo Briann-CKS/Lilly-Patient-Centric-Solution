@@ -16,8 +16,5 @@ Gabriel Iskandar
 4. Back End Developer
 Darrell Hayes, Brian Cheong, Gabriel Iskandar
 
-5. Data Engineer
-Lara Ozkan, Kruna Kumar:  My Nguyen
-Nicholas Okoro:  
-James Dix:  
-Darrell Hayes:  
+5. Data Engineer  
+Lara Ozkan, Kruna Kumar, My Nguyen
