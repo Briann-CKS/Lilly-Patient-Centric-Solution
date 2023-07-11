@@ -1,6 +1,8 @@
 
 // index.js
 
+LILLY_CHAT_API = "https://chat.apps.lrl.lilly.com/ask/cliniclilly"
+
 function sendQuestion() {
     // Get the user input from the input field
     const userInput = document.getElementById("userInput").value;
@@ -20,4 +22,25 @@ function sendQuestion() {
 
     // Clear the input field after sending the question
     document.getElementById("userInput").value = "";
-  }
+
+    sendQueryLillyChat(userInput);
+}
+
+function sendQueryLillyChat(input) {
+    const query = { q: input };
+    const params = new URLSearchParams(query);
+    const url = `${LILLY_CHAT_API}?${params}`;
+
+    console.log(url);
+
+    fetch(url)
+      .then(response => response.json())
+      .then(data => {
+        // Handle the response data
+        console.log(data);
+      })
+      .catch(error => {
+        // Handle any errors
+        console.error(error);
+      });
+}
