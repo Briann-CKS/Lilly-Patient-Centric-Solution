@@ -1,0 +1,118 @@
+body {
+    background-color: #fafafa;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #dbdbdb;
+    padding: 10px 0;
+    background-color: white;
+    width: 350px;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+    text-align: center;
+    margin-bottom: 10px;
+    border: none;
+}
+
+.container .header {
+    margin-bottom: 20px;
+}
+
+.container .header h1 {
+    font-family: 'Billabong', cursive;
+    font-size: 40px;
+}
+
+.container h2 {
+    color: #999;
+    font-weight: 600;
+    margin: 0 0 10px;
+}
+
+.container h3 {
+    color: #999;
+    font-weight: 400;
+    margin: 0 0 10px;
+}
+
+.container form {
+    margin-bottom: 10px;
+}
+
+.container form input {
+    width: 78%;
+    padding: 7px;
+    margin-bottom: 5px;
+    border: 1px solid #dbdbdb;
+    border-radius: 3px;
+    font-size: 12px;
+}
+
+.container form button {
+    width: 80%;
+    padding: 7px;
+    background-color: #b2dffc;
+    border: 1px solid #b2dffc;
+    border-radius: 5px;
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.fb-login {
+    background-color: #3897f0;
+    color: #fff;
+    border: none;
+    padding: 8px;
+    margin: 8px 0;
+    text-align: center;
+    width: 80%;
+    font-size: 14px;
+}
+
+.or-container {
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    justify-content: space-between;
+    width: 80%;
+    margin: 10px auto;
+}
+
+/* .or-container .line {
+    width: 45%;
+    height: 1px;
+    background-color: #dbdbdb;
+} */
+
+.terms, .password-reset {
+    color: #999;
+    font-size: 10px;
+    width: 100%; 
+    /* width: 80% */
+    text-align: center;
+    margin: 0 auto;
+}
+
+.signup-container, .login-container {
+    margin-top: 10px;
+    padding: 20px 0;
+    background-color: #fff;
+    border: 1px solid #dbdbdb;
+    width: 350px;
+    font-size: 14px;
+    text-align: center;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.1);
+}
