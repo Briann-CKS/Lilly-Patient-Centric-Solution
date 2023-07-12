@@ -66,3 +66,10 @@ function sendQueryLillyChat(input) {
         alert(error);
       });
 }
+
+
+function pressKey(event) {
+    if (event.keyCode == 13) {
+        sendQuestion()
+    }
+}
