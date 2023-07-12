@@ -61,6 +61,7 @@ body {
     margin-bottom: 30px;
     padding: 20px;
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+    position: relative;
 }
 
 .user-info {
@@ -94,6 +95,8 @@ body {
     width: 100%;
     height: auto;
     border-radius: 10px;
+    max-width: 100%;
+    object-fit: contain;
 }
 
 .post-actions {
@@ -112,3 +115,37 @@ body {
     font-size: 16px;
     cursor: pointer;
 }
+ 
+.post-caption {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 5px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+  }
+  
+.caption-container {
+    position: relative;
+  }
+
+.caption-username {
+    font-weight: bold;
+  }
+
+.caption-text {
+    margin-left: 5px;
+  }
+
+.caption-input {
+    flex-grow: 1;
+    border: none;
+    background-color: transparent;
+    color: white;
+    font-weight: bold;
+  }
