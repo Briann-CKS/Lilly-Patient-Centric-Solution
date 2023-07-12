@@ -4,10 +4,6 @@
 // const LILLY_CHAT_API = "https://chat.apps.lrl.lilly.com/ask/cliniclilly"
 
 function sendQuestion() {
-  setTimeout(send, 200);
-}
-
-function send() {
 
   //const model = new OpenAI({
     // azureOpenAIApiKey: "92c5be9400184e13b741b2ce87196b6f",
@@ -27,15 +23,20 @@ function send() {
   userBubble.setAttribute("class", "user-bubble bubble");
   userBubble.textContent = userInput;
   chatContainer.appendChild(userBubble);
+  // Clear the input field after sending the question
+  document.getElementById("userInput").value = "";
+
+  setTimeout(function() {
+    send(userInput, chatContainer);
+  }, 1000);
+}
+
+function send(userInput, chatContainer) {
 
   const botBubble = document.createElement("div");
   botBubble.setAttribute("class", "bot-bubble bubble left-align");
   botBubble.textContent = handleQuestion(userInput);
   chatContainer.appendChild(botBubble);
-  // Clear the input field after sending the question
-  document.getElementById("userInput").value = "";
-
-  //sendQueryLillyChat(userInput, botBubble, model);
 
 }
 
