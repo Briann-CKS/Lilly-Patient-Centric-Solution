@@ -17,9 +17,32 @@ body {
     flex-direction: column;
 }
 
+.splash {
+    font-family: 'Be Vietnam Pro', sans-serif;
+    text-align: center;
+    padding: 30px 10%;
+}
+
+.splash h2 {
+    font-size: 50px;
+}
+
+.splash p {
+    font-size: 40px;
+}
+
 .bubble-options {
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
     width: 100%;
+    align-items: center;
+}
+
+.bubble-options .row {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-bottom: 10px;
 }
 
 .bubble {
@@ -44,6 +67,7 @@ body {
 .home-bubble {
     background-color: var(--red);
     width: 40%;
+    font-size: 30px;
 }
 
 
