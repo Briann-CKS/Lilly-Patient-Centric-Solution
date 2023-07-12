@@ -1,5 +1,6 @@
-require('dotenv').config();
-const { OpenAI } = require("langchain/llms/openai");
+//require('dotenv').config();
+//const { OpenAI } = require("langchain/llms/openai");
+import { OpenAI } from "langchain/llms/openai";
 
 const model = new OpenAI({
     // azureOpenAIApiKey: "92c5be9400184e13b741b2ce87196b6f",

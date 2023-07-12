@@ -5,7 +5,10 @@
     "\\models",
     "\\public",
     "\\public\\css",
+    "\\public\\js",
+    "\\public\\python",
     "\\routes"
   ],
+  "SelectedNode": "\\public\\python\\chatbot.py",
   "PreviewInSolutionExplorer": false
 }

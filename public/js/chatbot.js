@@ -6,13 +6,13 @@ const LILLY_CHAT_API = "https://chat.apps.lrl.lilly.com/ask/cliniclilly"
 
 function sendQuestion() {
 
-  const model = new OpenAI({
+  //const model = new OpenAI({
     // azureOpenAIApiKey: "92c5be9400184e13b741b2ce87196b6f",
     // azureOpenAIApiInstanceName: "gpt-35-turbo",
     // azureOpenAIApiDeploymentName: "turbo",
     // azureOpenAIApiVersion: "2023-05-15",
-    temperature: 0.0,
-  });
+    //temperature: 0.0,
+  //});
     // Get the user input from the input field
     const userInput = document.getElementById("userInput").value;
   
@@ -26,8 +26,8 @@ function sendQuestion() {
 
     const botBubble = document.createElement("div");
     botBubble.setAttribute("class", "bot-bubble bubble");
-    // botBubble.textContent = "I cannot answer your question at the moment.";
-    // chatContainer.appendChild(botBubble);
+    botBubble.textContent = "I cannot answer your question at the moment.";
+    chatContainer.appendChild(botBubble);
 
     // Clear the input field after sending the question
     document.getElementById("userInput").value = "";
@@ -54,11 +54,11 @@ function sendQuestion() {
     // const param1Value = paramsFromUrl.get("param1");
     // console.log(param1Value); // Output: "value1"
 
-    console.log("gabe is smart");
-    sendQueryLillyChat(userInput, botBubble, model);
+    //console.log("gabe is smart");
+    //sendQueryLillyChat(userInput, botBubble, model);
     
-    // botBubble.textContent = "I am not smart enough.";
-    // chatContainer.appendChild(botBubble);
+    botBubble.textContent = "I am not smart enough.";
+    chatContainer.appendChild(botBubble);
 }
 
 async function sendQueryLillyChat(input, bubble, model) {
