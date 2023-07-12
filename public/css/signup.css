@@ -1,0 +1,127 @@
+body {
+    background-color: #f8f8f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  .main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  
+  .container {
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 40px;
+    background-color: #fff;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    border-radius: 10px;
+  }
+  
+  .container .header {
+    margin-bottom: 20px;
+  }
+  
+  .container .header h1 {
+    font-family: 'Billabong', cursive;
+    font-size: 40px;
+    color: #D52B1E;
+  }
+  
+  .container h3 {
+    color: #333;
+    font-weight: 400;
+    margin: 0 0 10px;
+  }
+  
+  .container form {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Add this property */
+    margin-bottom: 20px;
+  }
+  
+  .container form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+  
+  .container form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #D52B1E;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  
+  .fb-login {
+    background-color: #D52B1E;
+    color: white;
+    border: none;
+    padding: 10px;
+    margin: 10px 0;
+    text-align: center;
+    width: 100%;
+    font-size: 14px;
+  }
+  
+  .or-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin: 20px auto;
+  }
+  
+  .or-container .line {
+    flex-grow: 1;
+    height: 1px;
+    background-color: #ccc;
+  }
+  
+  .terms {
+    color: #555;
+    font-size: 12px;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+  }
+  
+  .login-container {
+    margin-top: 10px;
+    padding: 20px 0;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    width: 400px;
+    font-size: 14px;
+    text-align: center;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .login-container a {
+    color: #D52B1E;
+    text-decoration: none;
+  }
+  
+  .fb-login,
+  .login-container a {
+    background-color: #D52B1E;
+    color: white;
+  }
+  
