@@ -122,3 +122,9 @@ async function sendQueryLillyChat(input, bubble, model) {
 //     // //   console.log(`Python script exited with code ${code}`);
 //     // // });
 // }
+
+function pressKey(event) {
+    if (event.keyCode == 13) {
+        sendQuestion()
+    }
+}
