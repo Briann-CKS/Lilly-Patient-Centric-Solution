@@ -1,10 +1,12 @@
-require('dotenv').config();
+// require ('dotenv').config();
 // const { spawn } = require('child_process');
 // const { OpenAI } = require ("langchain/llms/openai");
 
 const LILLY_CHAT_API = "https://chat.apps.lrl.lilly.com/ask/cliniclilly"
 
 function sendQuestion() {
+  require ('dotenv').config();
+  const { OpenAI } = require ("langchain/llms/openai");
 
   const model = new OpenAI({
     // azureOpenAIApiKey: "92c5be9400184e13b741b2ce87196b6f",
@@ -68,60 +70,6 @@ async function sendQueryLillyChat(input, bubble, model) {
   chatContainer.appendChild(bubble);
 }
 
-// function sendQueryLillyChat(input) {
-//     const query = { q: input };
-//     const params = new URLSearchParams(query).toString();;
-//     // const url = `${LILLY_CHAT_API}?${params}`;
-//     const url = "https://chat.apps.lrl.lilly.com/ask/cliniclilly?q=What%20is%20a%20clinical%20trial";
-
-//     // fetch(url)
-//     //   .then(response => response.json())
-//     //   .then(data => {
-//     //     // Handle the response data
-//     //     alert(data);
-//     //   })
-//     //   .catch(error => {
-//     //     // Handle any errors
-//     //     // alert(response.status);
-//     //     alert(error);
-//     //   });
-
-//     // Execute Python script
-//     // const sensor = spawn('python3', ['./python/chatbot.py']);
-
-//     // // const temperatures = []; // Store readings
-
-//     // ls.stdout.on('data', (data) => {
-//     //   alert (`stdout: ${data}`);
-//     // });
-    
-//     // ls.stderr.on('data', (data) => {
-//     //   console.error(`stderr: ${data}`);
-//     // });
-    
-//     // ls.on('close', (code) => {
-//     //   alert(`child process exited with code ${code}`);
-//     // });
-
-//     // // // Send data to the script (API endpoint URL, request data, etc.)
-//     // // const requestData = {
-//     // //   url: 'https://chat.apps.lrl.lilly.com/ask/cliniclilly?q=What%20is%20a%20clinical%20trial',
-//     // //   method: 'GET',
-//     // // };
-//     // // pythonProcess.stdin.write(JSON.stringify(requestData));
-//     // // pythonProcess.stdin.end();
-
-//     // // // Receive output from the script
-//     // // pythonProcess.stdout.on('data', (data) => {
-//     // //   const responseData = JSON.parse(data);
-//     // //   console.log('Response:', responseData);
-//     // // });
-
-//     // // // Handle script termination
-//     // // pythonProcess.on('close', (code) => {
-//     // //   console.log(`Python script exited with code ${code}`);
-//     // // });
-// }
 
 function pressKey(event) {
     if (event.keyCode == 13) {
