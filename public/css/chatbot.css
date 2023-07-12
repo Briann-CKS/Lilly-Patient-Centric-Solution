@@ -17,6 +17,11 @@ body {
     flex-direction: column;
 }
 
+.bubble-options {
+    display: inline-block;
+    width: 100%;
+}
+
 .bubble {
     color: white;
     padding: 15px 20px;
@@ -35,6 +40,12 @@ body {
     background-color: var(--light-red);
     align-self: flex-start;
 }
+
+.home-bubble {
+    background-color: var(--red);
+    width: 40%;
+}
+
 
 .user-input {
     flex-grow: 1;

@@ -33,6 +33,9 @@ app.get('/login', function (req, res) {
 app.get('/chatbot', function (req, res) {
     res.sendFile(__dirname + "/html/chatbot.html");
 })
+app.get('/chatbot-home', function (req, res) {
+    res.sendFile(__dirname + "/html/chatbot-home.html");
+})
 
 app.post('/signup', function (req, res) {
     const Email = req.body.email;

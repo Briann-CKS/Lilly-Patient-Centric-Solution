@@ -1,6 +1,6 @@
 // require ('dotenv').config();
 // const { OpenAI } = require ("langchain/llms/openai");s
-import { OpenAI } from '../../dist/llms/openai.js';
+//import { OpenAI } from '../../dist/llms/openai.js';
 // const LILLY_CHAT_API = "https://chat.apps.lrl.lilly.com/ask/cliniclilly"
 
 function sendQuestion() {
@@ -17,10 +17,6 @@ function sendQuestion() {
 
   // Get the user input from the input field
   const userInput = document.getElementById("userInput").value;
-
-  if (userInput == "") {
-    return
-  }
   
   // Perform any necessary actions with the user's query
   // For example, you can display it in the chat container as a user bubble
@@ -32,13 +28,28 @@ function sendQuestion() {
 
     const botBubble = document.createElement("div");
     botBubble.setAttribute("class", "bot-bubble bubble");
-    botBubble.textContent = "I cannot answer your question at the moment.";
+    botBubble.textContent = handleQuestion(userInput);
     chatContainer.appendChild(botBubble);
   // Clear the input field after sending the question
   document.getElementById("userInput").value = "";
 
   //sendQueryLillyChat(userInput, botBubble, model);
 
+}
+
+function handleQuestion(input) {
+    if (input == "What is a clinical trial?") {
+        return "hi"
+    }
+    else if (input == "What are the benefits to me?") {
+        return "bye"
+    }
+    else if (input == "What are the risks?") {
+        return "sigh"
+    }
+    else {
+        return "Sorry, I cannot answer this question."
+    }
 }
 
 async function sendQueryLillyChat(input, bubble, model) {
