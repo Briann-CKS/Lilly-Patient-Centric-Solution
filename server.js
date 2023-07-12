@@ -61,4 +61,12 @@ app.post('/login', function (req, res) {
     res.redirect("/chatbot");
 });
 
+app.post('/ClinicLillyCommunity', function (req, res) {
+    res.redirect('/ClinicLillyCommunity');
+});
+
+app.get('/ClinicLillyCommunity', function (req, res) {
+    res.sendFile(__dirname + "/html/social_media.html");
+});
+
 app.listen(PORT, () => console.log('Server started'));
