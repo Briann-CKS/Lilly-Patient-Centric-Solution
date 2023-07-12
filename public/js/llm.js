@@ -17,5 +17,6 @@ async function myFunction() {
     console.log(res);
 }
 
+myFunction();
 
 
