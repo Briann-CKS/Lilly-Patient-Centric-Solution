@@ -26,10 +26,10 @@ function sendQuestion() {
   userBubble.textContent = userInput;
   chatContainer.appendChild(userBubble);
 
-    const botBubble = document.createElement("div");
-    botBubble.setAttribute("class", "bot-bubble bubble");
-    botBubble.textContent = handleQuestion(userInput);
-    chatContainer.appendChild(botBubble);
+  const botBubble = document.createElement("div");
+  botBubble.setAttribute("class", "bot-bubble bubble left-align");
+  botBubble.textContent = handleQuestion(userInput);
+  chatContainer.appendChild(botBubble);
   // Clear the input field after sending the question
   document.getElementById("userInput").value = "";
 
@@ -43,7 +43,7 @@ function handleQuestion(input) {
         return "A clinical study is a research study in which people volunteer to help find answers to specific health questions. Clinical studies are conducted according to a plan, called a protocol, which outlines the types of patients who may enter the study, the schedules of tests and procedures, the drugs involved, the dosages, or amount of the drug, the length of the study, and what the researchers hope to learn from the study."
     }
     else if (input.includes("benefit")) {
-        return "The potential benefits of participating in clinical research include the chance to help scientists better understand your disease or condition and to advance treatments and ways to prevent it in the future, feeling like you’re playing a more active role in your health, learning more about your disease or condition, and getting information about support groups and resources. In addition, some people participate in clinical trials because they hope to gain access to a potential new treatment for a disease before it is widely available."
+        return "The potential benefits of participating in clinical research include the chance to help scientists better understand your disease or condition and to advance treatments and ways to prevent it in the future, feeling like youï¿½re playing a more active role in your health, learning more about your disease or condition, and getting information about support groups and resources. In addition, some people participate in clinical trials because they hope to gain access to a potential new treatment for a disease before it is widely available."
     }
     else if (input.includes("risk")) {
         return "Risks to taking part in clinical trials include the following: There may be unpleasant, serious, or even life-threatening effects of experimental treatment; the study may require more time and attention than standard treatment would, including visits to the study site, more blood tests, more procedures, hospital stays, or complex dosage schedules; and there may be discomfort or side effects associated with the experimental treatment."
@@ -60,7 +60,6 @@ function handleQuestion(input) {
 }
 
 async function sendQueryLillyChat(input, bubble, model) {
-  console.log("gabe is smart");
   const res = await model.call(input);
   bubble.textContent = res;
   chatContainer.appendChild(bubble);

@@ -47,7 +47,7 @@ app.post('/signup', function (req, res) {
     console.log(FullName);
     console.log(Username);
     console.log(Password);
-    res.redirect("/chatbot");
+    res.redirect("/chatbot-home");
 
 });
 
@@ -61,11 +61,15 @@ app.post('/login', function (req, res) {
     console.log(FullName);
     console.log(Username);
     console.log(Password);
-    res.redirect("/chatbot");
+    res.redirect("/chatbot-home");
 });
 
 app.post('/ClinicLillyCommunity', function (req, res) {
     res.redirect('/ClinicLillyCommunity');
+});
+
+app.post('/chatbot-home', function (req, res) {
+    res.redirect('/chatbot');
 });
 
 app.get('/ClinicLillyCommunity', function (req, res) {

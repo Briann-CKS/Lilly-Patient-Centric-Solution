@@ -123,3 +123,8 @@ body {
     border-radius: 30px;
     cursor: pointer;
 }
+
+.left-align {
+    text-align: left;
+  }
+  
