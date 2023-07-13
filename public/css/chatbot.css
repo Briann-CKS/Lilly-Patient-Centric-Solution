@@ -16,6 +16,8 @@ body {
     padding: 20px;
     display: flex;
     flex-direction: column;
+    max-width: 1000px;
+    margin-bottom: 100px
 }
 
 .splash {
@@ -109,9 +111,16 @@ body {
 }
 
 .input-container {
+    position: fixed;
+    bottom: 0;
     display: flex;
     align-items: center;
-    padding: 10px 20px;
+    padding: 10px 5%;
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    left: 50%;
+    transform: translate(-50%, 0)
 }
 
 .header {
