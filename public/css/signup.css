@@ -6,6 +6,13 @@ body {
     height: 100vh;
     margin: 0;
   }
+
+  .container .header h1 {
+    font-size: 40px;
+    color: #D52B1E;
+    font-family: Arial, sans-serif;
+    /* 'Be Vietnam Pro', sans-serif; */
+  }
   
   .main-container {
     display: flex;
@@ -30,7 +37,7 @@ body {
   }
   
   .container .header h1 {
-    font-family: 'Billabong', cursive;
+    /* font-family: 'Billabong', cursive; */
     font-size: 40px;
     color: #D52B1E;
   }
