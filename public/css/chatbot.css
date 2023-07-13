@@ -129,6 +129,10 @@ body {
     cursor: pointer;
 }
 
+.nav-btn:hover {
+    background-color: lightcoral;
+}
+
 .left-align {
     text-align: left;
   }

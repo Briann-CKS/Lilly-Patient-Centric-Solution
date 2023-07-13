@@ -22,6 +22,10 @@ app.get('/', function (req, res) {
     res.sendFile(__dirname + "/html/signup.html");
 });
 
+app.post('/', function (req, res) {
+    res.redirect("/login");
+});
+
 app.get('/signup', function (req, res) {
     res.sendFile(__dirname + "/html/signup.html");
 });
