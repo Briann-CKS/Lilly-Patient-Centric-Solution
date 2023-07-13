@@ -68,6 +68,11 @@ body {
     background-color: var(--red);
     width: 40%;
     font-size: 30px;
+    cursor: pointer;
+}
+
+.home-bubble:hover {
+    background-color: var(--light-red);
 }
 
 
@@ -127,3 +132,5 @@ body {
 .left-align {
     text-align: left;
   }
+  
+  

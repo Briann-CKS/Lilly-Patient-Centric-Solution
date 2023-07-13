@@ -34,10 +34,9 @@ function sendQuestion() {
 function send(userInput, chatContainer) {
 
   const botBubble = document.createElement("div");
-  botBubble.setAttribute("class", "bot-bubble bubble left-align");
+  botBubble.setAttribute("class", "bot-bubble bubble left-align typing-effect");
   botBubble.textContent = handleQuestion(userInput);
   chatContainer.appendChild(botBubble);
-
 }
 
 function handleQuestion(input) {
@@ -68,9 +67,23 @@ async function sendQueryLillyChat(input, bubble, model) {
   chatContainer.appendChild(bubble);
 }
 
-
 function pressKey(event) {
     if (event.keyCode == 13) {
         sendQuestion()
     }
 }
+
+// function typeText(element, text) {
+//   let index = 0;
+//   const typingSpeed = 100; // Adjust typing speed (in milliseconds) here
+
+//   const typeInterval = setInterval(() => {
+//     element.textContent += text[index];
+//     index++;
+
+//     if (index >= text.length) {
+//       clearInterval(typeInterval);
+//       element.parentNode.removeChild(element.previousSibling); // Remove the typing-effect div
+//     }
+//   }, typingSpeed);
+// }
