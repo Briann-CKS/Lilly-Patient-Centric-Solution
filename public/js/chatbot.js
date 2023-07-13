@@ -41,7 +41,7 @@ function send(userInput, chatContainer) {
 
 function handleQuestion(input) {
 
-  if (input.includes("clinical trial")) {
+  if (input.includes("clinical study")) {
       return "A clinical study is a research study in which people volunteer to help find answers to specific health questions. Clinical studies are conducted according to a plan, called a protocol, which outlines the types of patients who may enter the study, the schedules of tests and procedures, the drugs involved, the dosages, or amount of the drug, the length of the study, and what the researchers hope to learn from the study."
   }
   else if (input.includes("benefit")) {

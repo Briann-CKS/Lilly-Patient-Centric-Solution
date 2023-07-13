@@ -116,10 +116,13 @@ body {
 
 .header {
     background-color: var(--red);
-    padding: 10px;
     color: white;
     text-align: center;
     position: relative;
+}
+
+.header img {
+    height: 100px;
 }
 
 .nav-btn {
